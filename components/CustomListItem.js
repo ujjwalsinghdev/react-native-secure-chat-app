@@ -20,7 +20,7 @@ const CustomListItem = ({ id, chatName, enterChat }) => {
       <Avatar
         rounded
         source={{
-          uri: chatMessages?.[0]?.photoURL || "https://www.flaticon.com/svg/vstatic/svg/937/937706.svg?token=exp=1614178132~hmac=2c4bf49336d412a8b078523dbd04cf63"
+          uri: chatMessages?.[0]?.photoURL || "https://www.searchpng.com/wp-content/uploads/2019/02/Profile-PNG-Icon.png"
         }}
       />
 

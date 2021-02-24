@@ -20,7 +20,7 @@ const ChatScreen = ({ navigation, route }) => {
       headerTitleAlign: "left",
       headerTitle: () => (
         <View style={{ flexDirection: "row", alignItems: "center", marginLeft: -25 }}>
-          <Avatar rounded source={{ uri: messages[0]?.data.photoURL || "https://www.flaticon.com/svg/vstatic/svg/937/937706.svg?token=exp=1614178132~hmac=2c4bf49336d412a8b078523dbd04cf63" }} />
+          <Avatar rounded source={{ uri: messages[0]?.data.photoURL || "https://www.searchpng.com/wp-content/uploads/2019/02/Profile-PNG-Icon.png" }} />
           <Text style={{ color: "white", marginLeft: 10, fontWeight: "700", fontSize: 17 }}>{route.params.chatName}</Text>
         </View>
       ),
