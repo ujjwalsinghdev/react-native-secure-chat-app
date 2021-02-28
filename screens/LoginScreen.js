@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from "react-native"
 import { Button, Input, Image } from "react-native-elements"
 import { KeyboardAvoidingView } from "react-native"
 import { auth } from "../firebase"
+import { AntDesign } from "@expo/vector-icons"
 
 const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState("")
@@ -26,12 +27,7 @@ const LoginScreen = ({ navigation }) => {
   return (
     <KeyboardAvoidingView behavior="padding" style={styles.container}>
       <StatusBar style="light" />
-      <Image
-        source={{
-          uri: "https://www.flaticon.com/svg/vstatic/svg/937/937706.svg?token=exp=1614178132~hmac=2c4bf49336d412a8b078523dbd04cf63"
-        }}
-        style={{ width: 200, height: 200 }}
-      />
+      <AntDesign name="wechat" style={{ color: "#2C6BED" }} size={200} color="black" />
       <View style={styles.inputContainer}>
         <Input placeholder="Email Address" autoFocus type="email" value={email} onChangeText={(text) => setEmail(text)} />
         <Input
